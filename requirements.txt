@@ -3,3 +3,5 @@ aiofiles
 colorama
 loguru
 websockets_proxy
+pycryptodome
+crypto
