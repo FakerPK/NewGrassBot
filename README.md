@@ -27,7 +27,7 @@ Automate Grass Node mining with this Python based script for VPS, managing multi
 
 ## Get Your User ID 🔍
 
-1. Open [Get Grass Dashboard](https://app.getgrass.io/dashboard) and log in.
+1. Open [Get Grass Dashboard](https://app.getgrass.io/register/?referralCode=citNrn5sQAg87PE) and log in.
 2. Press `F12` (or `Ctrl + Shift + I`) to open the developer console.
 3. Enter the following code in the console:
    ```javascript
@@ -67,10 +67,14 @@ Automate Grass Node mining with this Python based script for VPS, managing multi
 3. **Select a Plan:**  
    Choose one of the ISP plans (avoid the Residential Plan).  
    ![Plan Selection](https://github.com/user-attachments/assets/bbd22e0a-22c7-42cf-8608-361d7310e0ae)
-4. **Generate SOCKS5 Proxies:**  
+4. **Generate SOCKS5 Proxies:**
+   ![image](https://github.com/user-attachments/assets/51e6e2a4-cccc-47f7-88cb-65548445fcd4)
+
    Add the generated proxies to the `proxy.txt` file in the following format:
    ```
    socks5://username:pass@ip:port
+   OR
+   socks://username:pass@ip:port
    ```
 
 ---
@@ -95,15 +99,29 @@ Before running the script, ensure you have Python installed and all necessary pa
    You will be prompted to enter your `UserID` and the number of proxies you wish to use.
 5. **Add Your Proxies:**  
    Add your proxies to the `proxy.txt` file. You can add 10,000+ proxies!  
-   **Format:** `socks5://username:pass@ip:port`
-6. **Multiple Proxies:**  
+   **Format:**
+   ```bash
+   socks5://username:pass@ip:port
+   OR
+   socks://username:pass@ip:port
+   ```
+7. **Multiple Proxies:**  
    Each IP is estimated to earn ~3000 $GRASS per day.
-7. **Run the Script:**
+8. **Run the Script:**
    ```bash
    python3 main.py
    ```
-8. **Multiple User IDs:**  
+9. **Multiple User IDs:**  
    To run multiple User IDs, add them to the `config.json` file.
+   *Format for `config.json`:*
+   ```json
+   {
+    "user_ids": [
+        "USER_ID_1",
+        "USER_ID_2"
+    ]
+   }
+   ```
 
 ---
 
